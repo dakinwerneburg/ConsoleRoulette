@@ -228,6 +228,36 @@ namespace ccsbs_ex07_werneburg
             Bets.Add(new Number(Console.ReadLine()));
         }
 
+        /// <summary>
+        /// This was an inpsiration I found online  Wish I had time to implement
+        /// this with better colors and the original artist intended
+        /// 
+        /// https://github.com/Oneiros90/Roulette
+        /// </summary>
+        public void DrawRouletteTable()
+        {
+
+            Console.WriteLine("Street:    1      2      3      4      5      6     7       8      9     10     11     12               ");
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("    ____________________________________________________________________________________________________");
+            Console.WriteLine("   /   |      |      |      |      |      |      |      |      |      |      |      |      |           |");
+            Console.WriteLine("  /  0 |   3  |   6  |   9  |  12  |  15  |  18  |  21  |  24  |  27  |  30  |  33  |  36  |  2 to 1   |");
+            Console.WriteLine(" /_____|______|______|______|______|______|______|______|______|______|______|______|______|___________|");
+            Console.WriteLine(" |     |      |      |      |      |      |      |      |      |      |      |      |      |           |");
+            Console.WriteLine(" |  0  |   2  |   5  |   8  |  11  |  14  |  17  |  20  |  23  |  26  |  29  |  32  |  35  |  2 to 1   |");
+            Console.WriteLine(" |  0  |______|______|______|______|______|______|______|______|______|______|______|______|___________|");
+            Console.WriteLine(" |     |      |      |      |      |      |      |      |      |      |      |      |      |           |");
+            Console.WriteLine("  \\    |   1  |   4  |   7  |  10  |  13  |  16  |  19  |  22  |  25  |  28  |  31  |  34  |  2 to 1   |");
+            Console.WriteLine("   \\___|______|______|______|______|______|______|______|______|______|______|______|______|___________|");
+            Console.WriteLine("       |                           |                           |                           |            ");
+            Console.WriteLine("       |          1st 12           |          2nd 12           |           3rd 12          |            ");
+            Console.WriteLine("       |___________________________|___________________________|___________________________|            ");
+            Console.WriteLine("       |            |              |             |             |            |              |            ");
+            Console.WriteLine("       |  1 to 18   |  EVEN        |      RED    |    BLACK    |     ODD    |  19 to 36    |            ");
+            Console.WriteLine("       |____________|______________|_____________|_____________|____________|______________|            ");
+
+        }
 
 
     }

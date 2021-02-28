@@ -22,6 +22,7 @@ namespace ccsbs_ex07_werneburg
     class Bin
     {
         public Dictionary<string, ConsoleColor> NumberColor { get; }
+
         public Dictionary<int, string> Corner { get; }
         public string[] Numbers { get; }
 

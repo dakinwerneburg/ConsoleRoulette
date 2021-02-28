@@ -21,6 +21,7 @@ namespace ccsbs_ex07_werneburg
             Console.WindowHeight = Console.WindowHeight +10;
             Console.WindowWidth = Console.WindowWidth -50;
             RouletteTable rouletteTable = new RouletteTable();
+           
 
             //Presents Information Related to the game
             rouletteTable.DrawGameIntroduction();
@@ -32,7 +33,7 @@ namespace ccsbs_ex07_werneburg
             string BinSlot = rouletteTable.RouletteWheel.SpinWheel();
 
             Console.Clear();
-            rouletteTable.GetOdds();
+            rouletteTable.DrawRouletteTable();
             rouletteTable.RouletteWheel.DrawWheel();
             Console.ResetColor();
 
@@ -52,14 +53,15 @@ namespace ccsbs_ex07_werneburg
                 }
             }
             Console.SetCursorPosition(0, 0);
-            
+
+
+
             Console.ReadKey();
 
 
         }
 
-
-
+       
 
 
 
